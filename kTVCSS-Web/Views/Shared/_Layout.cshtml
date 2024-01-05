@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="kTVCSS">
+    <meta name="author" content="kurwanator1337">
+    <html prefix="og: http://ogp.me/ns#">
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="@ViewData["Title"]" />
+    <meta property="og:description" content="@ViewData["Description"]" />
+    <meta property="og:image" content="https://ktvcss.ru/images/logo_ktv_short.png" />
+    <meta property="og:url" content="@ViewData["Url"]" />
+    <meta property="og:site_name" content="kTVCSS" />
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+    <title>kTVCSS</title>
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    @* Uncomment to use the HtmlEditor control *@
+    @* <script src="https://unpkg.com/devextreme-quill@21_2/dist/dx-quill.min.js"></script> *@
+
+    <link rel="stylesheet" href="~/css/vendor.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Site.css" />
+    <script src="~/js/vendor.js" asp-append-version="true"></script>
+    <script src="~/js/main.js" asp-append-version="true"></script>
+    <script src="https://unpkg.com/@@vkontakte/superappkit@1.57.0/dist/index-umd.js"></script>
+    <script src="https://kit.fontawesome.com/13355b9fbd.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="dx-theme-background-color">
+    <main role="main" class="container">
+        @RenderBody()
+    </main>
+
+    @* <script>
+        $(function () {
+            httpGet("/api/Values")
+                .then(
+                    response => {
+                        console.log(JSON.parse(response));
+                        console.log(JSON.parse(response));
+                    },
+                    error => console.log(error)
+                );
+        })
+    </script> *@
+</body>
+
+</html>
